@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">VideoFy</string>
+    <string name="act2hello">Hello</string>
+    <string name="welcomeText">Welcome!</string>
+    <string name="InputTextUsername"></string>
+    <string name="InputTextPassword"></string>
+    <string name="loginButton">LOG IN</string>
+    <string name="usernameText">Username</string>
+    <string name="passwordText">Password</string>
+    <string name="wrongCredentials">Wrong username or password , try again .</string>
+    <string name="noaccount">Don\'t have an account?</string>
+    <string name="sign_up_now">Sign up</string>
+    <string name="signUp">Sign Up</string>
+    <string name="signUpButton">Sign Up</string>
+    <string name="hintUsername">Username</string>
+    <string name="hintPassword">Password</string>
+    <string name="hintConfirmPassword">Confirm Password</string>
+    <string name="wrongPassword_signup">Wrong password , try again .</string>  <!--na to koitaksw-->
+    <string name="wrongPasswordLength_signup">Password must be at least 8 characters , try again .</string>
+    <string name="helpText">Hint: Password must be at least 8 characters</string>
+    <string name="checkBoxPassword">Show Password</string>
+    <string name="searchHint">Search…</string>
+    <string name="HashtagContainerLabelChannelName">Published HashTags</string>
+    <string name="ChannelNameContainerLabelChannelName">Published ChannelNames</string>
+    <string name="createAccount">Create an account and enjoy full content.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_navigation">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="searchHashtagHint">Search a HashTag… </string>
+    <string name="searchChannelnameHint">Search a ChannelName…</string>
+    <string name="noSearchResults">No results</string>
+    <string name="contentSelection">Select a video from </string>
+    <string name="loading">Loading</string>
+    <string name="follow">Follow</string>
+    <string name="video_button">video</string>
+    <string name="record">RECORD</string>
+    <string name="pick">PICK</string>
+
+
+</resources>

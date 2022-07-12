@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <VideoView
+            android:id="@+id/video_profile"
+            android:layout_width="191dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.084" />
+
+        <TextView
+            android:id="@+id/deleteTxtView"
+            android:layout_width="94dp"
+            android:layout_height="34dp"
+            android:background="@drawable/rounded_corner"
+            android:drawableRight="@drawable/trashbin"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="Delete"
+            android:textColor="#767B6D"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/video_profile"
+            app:layout_constraintEnd_toEndOf="@+id/video_profile"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/video_profile"
+            app:layout_constraintTop_toTopOf="@+id/video_profile"
+            app:layout_constraintVertical_bias="0.807"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

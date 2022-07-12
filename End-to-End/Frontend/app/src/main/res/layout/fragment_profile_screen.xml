@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profileFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:theme="@style/FullScreen"
+    tools:context=".ProfileScreen">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="4dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/profilePicture_image"
+            android:layout_width="91dp"
+            android:visibility="visible"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="53dp"
+            android:src="@drawable/profile_pic"
+            app:layout_constraintEnd_toStartOf="@+id/channelNameTxtView_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/channelNameTxtView_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="sans-serif-black"
+            android:text="channelname"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profilePicture_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profilePicture_image" />
+
+        <View
+            android:id="@+id/separatorLine"
+            android:layout_width="410dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="500dp"
+            android:background="#919191"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/channelNameTxtView_profile"
+            app:layout_constraintVertical_bias="0.174" />
+
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="373dp"
+            android:layout_height="511dp"
+            android:gravity="center"
+            android:numColumns="3"
+            android:scrollbars="horizontal"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.578"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separatorLine" />
+
+
+        <Button
+            android:id="@+id/logOutButton"
+            android:layout_width="105dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="264dp"
+            android:backgroundTint="#267A7F"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Log out"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profilePicture_image" />
+
+        <!--<Button
+            android:id="@+id/subscribe"
+            android:layout_width="166dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#267A7F"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="subscribe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.376"
+            app:layout_constraintStart_toEndOf="@+id/profilePicture_image"
+            app:layout_constraintTop_toBottomOf="@+id/channelNameTxtView_profile" />-->
+
+        <!--     <Button
+            android:id="@+id/subscribeBtn"
+            android:layout_width="126dp"
+            android:layout_height="29dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#267A7F"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/subscribe"
+            app:layout_constraintBottom_toTopOf="@+id/separatorLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.362"
+            app:layout_constraintStart_toEndOf="@+id/profilePicture_image"
+            app:layout_constraintTop_toBottomOf="@+id/channelNameTxtView_profile" />-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

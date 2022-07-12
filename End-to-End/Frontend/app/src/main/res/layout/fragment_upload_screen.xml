@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadScreen">
+
+    <ImageButton
+        android:id="@+id/recordVideoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_videocam_24"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="@+id/uploadVideoButton"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/recordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:text="RECORD"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/recordVideoButton"
+        app:layout_constraintStart_toStartOf="@id/recordVideoButton"
+        app:layout_constraintEnd_toEndOf="@id/recordVideoButton">
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/uploadVideoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_file_upload_24"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/uploadVideoView"
+        app:layout_constraintVertical_bias="0.502"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/uploadB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:text="UPLOAD"
+        android:visibility="invisible"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/uploadVideoButton"
+        app:layout_constraintStart_toStartOf="@id/uploadVideoButton"
+        app:layout_constraintEnd_toEndOf="@id/uploadVideoButton">
+    </TextView>
+
+    <EditText
+        android:id="@+id/hashtagsPublished"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Type hashtags"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/uploadVideoButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/uploadVideoView"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <ImageButton
+        android:id="@+id/accessVideoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="100dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_drive_folder_upload_24"
+        app:layout_constraintBottom_toBottomOf="@+id/recordVideoButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/pickText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:text="@string/pick"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/accessVideoButton"
+        app:layout_constraintStart_toStartOf="@id/accessVideoButton"
+        app:layout_constraintEnd_toEndOf="@id/accessVideoButton">
+    </TextView>
+
+
+    <VideoView
+        android:id="@+id/uploadVideoView"
+        android:layout_width="407dp"
+        android:layout_height="448dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/share_content"
+        android:layout_width="match_parent"
+        android:layout_height="404dp"
+        android:src="@drawable/share_content1"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchScreen"
+    android:visibility="visible"
+
+    tools:ignore="ExtraText">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        app:backgroundTint="@color/teal_700"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/search_menu"
+        app:itemIconTint="@drawable/searchbar_selector_color"
+        app:itemTextColor="@drawable/searchbar_selector_color"
+        android:layout_height="0dp"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/openView"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchBar"
+        android:layout_height="0dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/mainLogo"
+            android:layout_width="404dp"
+            android:layout_height="448dp"
+            android:src="@drawable/app_logo_main"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/teal_700"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/the_fragChannelName"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchBar"
+        android:layout_height="0dp"
+        tools:ignore="MissingConstraints">
+
+
+        <SearchView
+            android:id="@+id/searchAreaChannelnames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-10dp"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/search_gradient"
+
+            app:queryHint="@string/searchChannelnameHint"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"/>
+
+
+
+
+        <TextView
+            android:id="@+id/textViewForContainerChannelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/ChannelNameContainerLabelChannelName"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/searchAreaChannelnames"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewForNullSearchResultsChannelnames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noSearchResults"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/searchAreaChannelnames"
+            tools:ignore="MissingConstraints" />
+
+        <ListView
+            android:id="@+id/channelnamesListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewForContainerChannelName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            android:scrollingCache="true"
+            android:scrollbarSize="3dp"
+            android:smoothScrollbar="true"
+            tools:listitem="@layout/list_items"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/the_fragHashTag"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchBar"
+        android:layout_height="0dp"
+        tools:ignore="MissingConstraints">
+
+        <SearchView
+            android:id="@+id/searchAreaHashtags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/search_gradient"
+
+            android:clickable="true"
+            app:queryHint="@string/searchHashtagHint"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:focusable="true"> </SearchView>
+
+        <TextView
+            android:id="@+id/textViewForContainerHashtag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/HashtagContainerLabelChannelName"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/searchAreaHashtags"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewForNullSearchResultsHashtags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noSearchResults"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/searchAreaHashtags"
+            tools:ignore="MissingConstraints" />
+
+        <ListView
+            android:id="@+id/hashtagsListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:divider="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewForContainerHashtag"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            android:scrollingCache="true"
+            android:scrollbarSize="3dp"
+            android:smoothScrollbar="true"
+            tools:listitem="@layout/list_items" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
