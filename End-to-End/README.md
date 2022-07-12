@@ -1,10 +1,10 @@
-BACKEND EXECUTION:
+# BACKEND EXECUTION:
 		1. First, we run MainServer.
 		2. We have created 3 configurations for Brokers, Broker1, Broker2, Broker3. We execute them.
 
 
 
-ANDROID EXECUTION:
+#  ANDROID EXECUTION:
 
 1st way (Execute from android studio emulators):
 
