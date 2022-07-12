@@ -1,12 +1,14 @@
-# BACKEND EXECUTION:
-		1. First, we run MainServer.
-		2. We have created 3 configurations for Brokers, Broker1, Broker2, Broker3. We execute them.
+# EXECUTION
+
+**BACKEND EXECUTION:
+* First, we run MainServer.
+* We have created 3 configurations for Brokers, Broker1, Broker2, Broker3. We execute them.
 
 
 
-#  ANDROID EXECUTION:
+**ANDROID EXECUTION:
 
-1st way (Execute from android studio emulators):
+* 1st way (Execute from android studio emulators):
 
 We create 2 configurations app1, app2.
 e.g.	app1: launch flags: -e key 5017
@@ -24,7 +26,7 @@ second emulatos--> redir add:tcp:5018:5018
 
 
 
-2nd way (Execute from real android devices):
+* 2nd way (Execute from real android devices):
 
 MainServer's IP address needed to be changed from localhost IP to local IP of the machine running the MainServer.
 Change should be done to: LogInActivity.java>line:62
