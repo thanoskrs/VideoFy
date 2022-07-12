@@ -29,7 +29,7 @@ EXECUTION *:
 * We have created 3 configurations for AppNodes, AppNode1, AppNode2, AppNode3. We execute them. Note, that we can dynamically create more AppNodes.
 
 	
-* * The only information needed for both brokers and AppNodes is MainServer's IP and port. This information is saved in MainServer.txt, where the IP saved, is the localhost "127.0.0.1". If any of the components run on a different machine, the MainServer.txt will need to be updated with the IP and port of the machine running the MainServer.
+/* * The only information needed for both brokers and AppNodes is MainServer's IP and port. This information is saved in MainServer.txt, where the IP saved, is the localhost "127.0.0.1". If any of the components run on a different machine, the MainServer.txt will need to be updated with the IP and port of the machine running the MainServer.
 * If the above configurations do not appear, they should be created in Intellij.
 * For video metadata we used tika library and shold be included to the project.Download here: https://downloads.apache.org/tika/
 * Here you can download some videos in order to try the app: https://drive.google.com/file/d/1gKP6veMRkRh6DBDfYzf6VKaoAlJv3Wp6/view?usp=sharing
